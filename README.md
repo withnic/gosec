@@ -13,13 +13,13 @@ You may obtain a copy of the License [here](http://www.apache.org/licenses/LICEN
 
 ## Project status
 
-[![Build Status](https://travis-ci.org/securego/gosec.svg?branch=master)](https://travis-ci.org/securego/gosec)
-[![Coverage Status](https://codecov.io/gh/securego/gosec/branch/master/graph/badge.svg)](https://codecov.io/gh/securego/gosec)
-[![GoReport](https://goreportcard.com/badge/github.com/securego/gosec)](https://goreportcard.com/badge/github.com/securego/gosec)
-[![GoDoc](https://godoc.org/github.com/securego/gosec?status.svg)](https://godoc.org/github.com/securego/gosec)
+[![Build Status](https://travis-ci.org/withnic/gosec.svg?branch=master)](https://travis-ci.org/withnic/gosec)
+[![Coverage Status](https://codecov.io/gh/withnic/gosec/branch/master/graph/badge.svg)](https://codecov.io/gh/withnic/gosec)
+[![GoReport](https://goreportcard.com/badge/github.com/withnic/gosec)](https://goreportcard.com/badge/github.com/withnic/gosec)
+[![GoDoc](https://godoc.org/github.com/withnic/gosec?status.svg)](https://godoc.org/github.com/withnic/gosec)
 [![Docs](https://readthedocs.org/projects/docs/badge/?version=latest)](https://securego.io/)
-[![Downloads](https://img.shields.io/github/downloads/securego/gosec/total.svg)](https://github.com/securego/gosec/releases)
-[![Docker Pulls](https://img.shields.io/docker/pulls/securego/gosec.svg)](https://hub.docker.com/r/securego/gosec/tags)
+[![Downloads](https://img.shields.io/github/downloads/withnic/gosec/total.svg)](https://github.com/withnic/gosec/releases)
+[![Docker Pulls](https://img.shields.io/docker/pulls/withnic/gosec.svg)](https://hub.docker.com/r/withnic/gosec/tags)
 [![Slack](http://securego.herokuapp.com/badge.svg)](http://securego.herokuapp.com)
 
 ## Install
@@ -28,20 +28,20 @@ You may obtain a copy of the License [here](http://www.apache.org/licenses/LICEN
 
 ```bash
 # binary will be $GOPATH/bin/gosec
-curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $GOPATH/bin vX.Y.Z
+curl -sfL https://raw.githubusercontent.com/withnic/gosec/master/install.sh | sh -s -- -b $GOPATH/bin vX.Y.Z
 
 # or install it into ./bin/
-curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s vX.Y.Z
+curl -sfL https://raw.githubusercontent.com/withnic/gosec/master/install.sh | sh -s vX.Y.Z
 
 # In alpine linux (as it does not come with curl by default)
-wget -O - -q https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s vX.Y.Z
+wget -O - -q https://raw.githubusercontent.com/withnic/gosec/master/install.sh | sh -s vX.Y.Z
 
 gosec --help
 ```
 
 ### Local Installation
 
-`$ go get github.com/securego/gosec/cmd/gosec/...`
+`$ go get github.com/withnic/gosec/cmd/gosec/...`
 
 ## Usage
 
@@ -231,7 +231,7 @@ You can run the `gosec` tool in a container against your local Go project. You j
 `GOPATH` of the container:
 
 ```bash
-docker run -it -v $GOPATH/src/<YOUR PROJECT PATH>:/go/src/<YOUR PROJECT PATH> securego/gosec /go/src/<YOUR PROJECT PATH>/...
+docker run -it -v $GOPATH/src/<YOUR PROJECT PATH>:/go/src/<YOUR PROJECT PATH> withnic/gosec /go/src/<YOUR PROJECT PATH>/...
 ```
 
 ### Generate TLS rule
@@ -241,7 +241,7 @@ The configuration of TLS rule can be generated from [Mozilla's TLS ciphers recom
 First you need to install the generator tool:
 
 ```bash
-go get github.com/securego/gosec/cmd/tlsconfig/...
+go get github.com/withnic/gosec/cmd/tlsconfig/...
 ```
 
 You can invoke now the `go generate` in the root of the project:

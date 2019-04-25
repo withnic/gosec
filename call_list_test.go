@@ -5,8 +5,8 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/securego/gosec"
-	"github.com/securego/gosec/testutils"
+	"github.com/withnic/gosec"
+	"github.com/withnic/gosec/testutils"
 )
 
 var _ = Describe("call list", func() {

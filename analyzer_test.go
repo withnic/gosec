@@ -6,12 +6,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/securego/gosec"
-	"github.com/securego/gosec/rules"
+	"github.com/withnic/gosec"
+	"github.com/withnic/gosec/rules"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/securego/gosec/testutils"
+	"github.com/withnic/gosec/testutils"
 )
 
 var _ = Describe("Analyzer", func() {

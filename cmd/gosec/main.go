@@ -26,9 +26,9 @@ import (
 	"strings"
 
 	"github.com/kisielk/gotool"
-	"github.com/securego/gosec"
-	"github.com/securego/gosec/output"
-	"github.com/securego/gosec/rules"
+	"github.com/withnic/gosec"
+	"github.com/withnic/gosec/output"
+	"github.com/withnic/gosec/rules"
 )
 
 const (

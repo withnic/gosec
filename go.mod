@@ -1,4 +1,4 @@
-module github.com/securego/gosec
+module github.com/withnic/gosec
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect

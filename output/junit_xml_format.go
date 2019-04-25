@@ -5,7 +5,7 @@ import (
 	htmlLib "html"
 	"strconv"
 
-	"github.com/securego/gosec"
+	"github.com/withnic/gosec"
 )
 
 type junitXMLReport struct {

@@ -3,7 +3,7 @@ package main
 import (
 	"sort"
 
-	"github.com/securego/gosec"
+	"github.com/withnic/gosec"
 )
 
 type sortBySeverity []*gosec.Issue
